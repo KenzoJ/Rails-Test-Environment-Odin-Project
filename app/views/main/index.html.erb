@@ -1,14 +1,8 @@
 <h1>Task Manager</h1>
 <p>This is an application for managing a todo list</p>
 
-<% x = 1 + 1 %><br />
+<%= link_to('Tasks', {controller: 'tasks', action: 'index', page: 1}) %><br />
 
-<%= x%><br />
+ 
 
-<% tasks = ['fold laundry', 'sweep porch', 'wash dishes']%>
-
-<ul>
-<%tasks.each do |task|  %>
-    <li><%= task %></li>
-<%end %>
-</ul>
+<%= link_to('About', {action: 'about', page: 5, id: 20}) %><br />
