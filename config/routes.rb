@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+
+  root "main#index"
+
+  match 'about', to: "main#index", via: :get
+
+  get 'main/index'
+  get 'tasks/index'
+  get 'tasks/new'
+  get 'tasks/edit'
   resources :cars
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
